@@ -1,0 +1,20 @@
+{
+  "name": "whiteboard-sync",
+  "version": "2.0.0",
+  "description": "协作白板内核：LWW CRDT 并发一致 + 版本向量因果投递 + 选择性撤销 + 原子事务 + 操作压缩 + 压感笔迹/橡皮分块，原生 Canvas + Node.js ws",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test-kernel.js && node test-frontend.js && node test-smoke.js",
+    "test:kernel": "node test-kernel.js",
+    "test:frontend": "node test-frontend.js",
+    "test:smoke": "node test-smoke.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
